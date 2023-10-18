@@ -1,0 +1,12 @@
+name: run on reusing workflow
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+
+jobs:
+  go-lint:
+    uses: kounoike-golangci-bug-reproduction-test/github-workflows/workflows/go-lint.yml@main
