@@ -1,0 +1,42 @@
+run:
+  timeout: 4m
+  issues-exit-code: 1
+  tests: true
+linters:
+  disable-all: true
+  enable:
+    - govet
+    - errcheck
+    - staticcheck
+    - unused
+    - gosimple
+    - ineffassign
+    - typecheck
+    - misspell
+    - goimports
+    - unconvert
+    - unparam
+    - nakedret
+    - asciicheck
+    - bodyclose
+    - durationcheck
+    - exhaustive
+    - exportloopref
+    - forcetypeassert
+    - gofmt
+    - makezero
+    - nilerr
+    - noctx
+    - prealloc
+    - predeclared
+    - rowserrcheck
+    - sqlclosecheck
+    - wastedassign
+    - whitespace
+    - thelper
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
+linters-settings:
+  exhaustive:
+    default-signifies-exhaustive: true
